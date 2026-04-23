@@ -1,0 +1,55 @@
+.menu {
+  font-family: "Open Sans", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.content {
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.logo:hover {
+  color: #505254;
+  transition: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #0a1128;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: gray;
+}
+
+.small .content {
+  padding: 0.5rem 2rem;
+}
+
+.small .logo {
+  font-size: 1.1rem;
+}

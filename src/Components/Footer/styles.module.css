@@ -1,0 +1,31 @@
+.footer {
+  background: white;
+
+  padding: 4rem 2rem;
+
+  text-align: center;
+
+  border-top: 1px solid #eee;
+}
+
+.text {
+  font-size: 1.8rem;
+
+  color: #0a1128;
+}
+
+.link {
+  text-decoration: none;
+
+  color: #0a1128;
+
+  font-weight: bold;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.heart {
+  color: crimson;
+}
