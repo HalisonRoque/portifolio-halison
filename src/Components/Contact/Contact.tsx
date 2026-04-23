@@ -1,19 +1,16 @@
+import { FaInstagram, FaGithub, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import styles from './styles.module.css';
 import logo from '../../assets/img/javascript.svg'
 
 export default function Contact() {
 
     return (
-
         <section
             id="contact"
             className={styles.section}
         >
-
             <div className={styles.container}>
-
                 <div className={styles.content}>
-
                     <h2 className={styles.title}>
                         Vamos conversar?
                     </h2>
@@ -30,7 +27,7 @@ export default function Contact() {
                             target="_blank"
                             className={`${styles.button} ${styles.instagram}`}
                         >
-                            Instagram
+                            <FaInstagram /> Instagram
                         </a>
 
                         <a
@@ -38,7 +35,7 @@ export default function Contact() {
                             target="_blank"
                             className={`${styles.button} ${styles.github}`}
                         >
-                            GitHub
+                            <FaGithub /> GitHub
                         </a>
 
                         <a
@@ -46,32 +43,26 @@ export default function Contact() {
                             target="_blank"
                             className={`${styles.button} ${styles.whatsapp}`}
                         >
-                            WhatsApp
+                            <FaWhatsapp /> WhatsApp
                         </a>
 
                         <a
                             href="mailto:seuemail@exemplo.com"
                             className={`${styles.button} ${styles.email}`}
                         >
-                            Email
+                            <FaEnvelope /> Email
                         </a>
-
                     </div>
-
                 </div>
 
                 <div className={styles.imageBox}>
-
                     <img
                         src={logo}
                         alt="Javascript"
                         className={styles.image}
                     />
-
                 </div>
-
             </div>
-
         </section>
     )
 }

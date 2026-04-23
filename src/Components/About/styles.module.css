@@ -1,14 +1,19 @@
-.section{
-padding:10rem;
-max-width:900px;
-margin:auto;
+.section {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: column;
+  align-items: center;
+  padding: 10rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-.title{
-font-size:4rem;
-margin-bottom:3rem;
+.title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
 }
 
-.text{
-margin-bottom:2rem;
+.text {
+  margin-bottom: 2rem;
 }

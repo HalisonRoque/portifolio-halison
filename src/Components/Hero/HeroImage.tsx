@@ -1,33 +1,49 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import foto from '../../assets/img/halisonimg.jpeg';
-import avatar from '../../assets/img/javascript.svg';
+import avatarVideo from '../../assets/img/avatar.mp4';
 import styles from './styles.module.css';
 
 export default function HeroImage() {
-    const [showAvatar, setShowAvatar] = useState(false);
+    const [showVideo, setShowVideo] = useState(false);
+    const videoRef = useRef<HTMLVideoElement | null>(null);
 
     useEffect(() => {
         const sequence = async () => {
-            await new Promise(r => setTimeout(r, 1000)); // mostra foto
-            setShowAvatar(true);
+            await new Promise(r => setTimeout(r, 1000));
 
-            await new Promise(r => setTimeout(r, 1500)); // avatar aparece
-            setShowAvatar(false);
+            setShowVideo(true);
+
+            // garante que o vídeo começa do início
+            if (videoRef.current) {
+                videoRef.current.currentTime = 0;
+                videoRef.current.play();
+            }
         };
 
         sequence();
     }, []);
 
+    const handleVideoEnd = () => {
+        setShowVideo(false);
+    };
+
     return (
         <div className={styles.imageWrapper}>
+
+            {/* FOTO */}
             <img
                 src={foto}
-                className={`${styles.image} ${showAvatar ? styles.hide : styles.show}`}
+                className={`${styles.image} ${showVideo ? styles.hide : styles.show}`}
             />
 
-            <img
-                src={avatar}
-                className={`${styles.image} ${showAvatar ? styles.show : styles.hide}`}
+            {/* VÍDEO */}
+            <video
+                ref={videoRef}
+                src={avatarVideo}
+                muted
+                playsInline
+                onEnded={handleVideoEnd}
+                className={`${styles.image} ${styles.video} ${showVideo ? styles.show : styles.hide}`}
             />
         </div>
     );
