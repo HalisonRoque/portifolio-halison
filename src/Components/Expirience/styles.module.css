@@ -1,0 +1,124 @@
+.section {
+  font-family: "Open Sans", sans-serif;
+  padding: 6rem 2rem; 
+  margin: 2rem 0; 
+  text-align: center;
+  color: white;
+  background: #0a1128;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center; 
+  text-indent: 0;
+  position: relative;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* CONTAINER */
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.card {
+  position: relative; /* 🔥 importante pros botões */
+  padding: 3rem 2rem;
+
+  background: #0f1a3a;
+  border-radius: 16px;
+
+  box-shadow:
+    0 0 25px rgba(0, 110, 255, 0.25),
+    0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* conteúdo */
+.card h3 {
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+}
+
+.card span {
+  display: block;
+  color: #aaa;
+}
+
+.period {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* BOTÕES DENTRO DO CARD */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 2;
+
+  transition: 0.3s;
+}
+
+.navButton:hover {
+  background: rgba(0, 212, 255, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.left {
+  left: 10px; /* 🔥 agora DENTRO */
+}
+
+.right {
+  right: 10px; /* 🔥 agora DENTRO */
+}
+
+/* INDICADORES */
+.dots {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.active {
+  color: #00d4ff;
+  transform: scale(1.3);
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
+  }
+}
