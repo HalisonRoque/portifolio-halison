@@ -57,3 +57,62 @@
 .small .logo {
   font-size: 1.1rem;
 }
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 760px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    background: rgba(10, 17, 40, 0.95);
+    backdrop-filter: blur(10px);
+
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+
+    transform: translateY(-200%);
+    opacity: 0;
+
+    transition: 0.3s ease;
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav li {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .content {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    gap: 1rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
+}

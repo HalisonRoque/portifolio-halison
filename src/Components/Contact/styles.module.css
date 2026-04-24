@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: clamp(3rem, 5vw, 6rem);
 }
 
 .section > * {
@@ -122,5 +122,22 @@
 
   .links {
     align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 280px;
   }
 }

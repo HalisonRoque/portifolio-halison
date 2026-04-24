@@ -1,12 +1,12 @@
 .section {
   font-family: "Open Sans", sans-serif;
   min-height: 80vh;
-  background: url('../../assets/img/tec.jpg') center/cover no-repeat;
+  background: url("../../assets/img/tec.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 6rem 8rem;
+  padding: clamp(3rem, 5vw, 6rem);
   gap: 4rem;
 }
 
@@ -120,4 +120,27 @@
   50% {
     border-color: transparent;
   }
+}
+
+@media (max-width: 900px) {
+  .section {
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .imageWrapper {
+    width: 220px;
+    height: 220px;
+    margin-top: 2rem;
+  }
+  
 }

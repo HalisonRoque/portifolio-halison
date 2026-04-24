@@ -56,7 +56,7 @@ const skills = [
 
 export default function Skills() {
     return (
-        <section className={styles.section}>
+        <section id="skills" className={styles.section}>
             <div className={styles.grid}>
                 {skills.map((item, index) => (
                     <Reveal key={item.title} delay={index * 100}>

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import foto from '../../assets/img/halisonimg.jpeg';
+import foto from '../../assets/img/halisonRoque.jpeg';
 import avatarVideo from '../../assets/img/avatar.mp4';
 import styles from './styles.module.css';
 
