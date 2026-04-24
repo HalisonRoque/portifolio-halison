@@ -1,7 +1,8 @@
 .footer {
-  background: #0a1128; /* tema escuro */
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 2rem 1.5rem;
+  background: url("../../assets/img/tec.jpg") center/cover no-repeat;
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(0, 212, 255, 0.15);
+  padding: 1.2rem 1rem;
 }
 
 .container {
@@ -16,7 +17,7 @@
 .text {
   color: #ccc;
   font-size: 0.95rem;
-  line-height: 1.2; 
+  line-height: 1.2;
   margin: 0;
 }
 
