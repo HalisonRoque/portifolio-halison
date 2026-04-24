@@ -30,7 +30,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className={styles.section}>
+        <section id="home" className={styles.section}>
             <div>
                 <h2 className={styles.title}>
                     Desenvolvedor <br />
