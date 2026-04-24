@@ -4,24 +4,45 @@ import styles from "./styles.module.css";
 const experiences = [
     {
         title: "Desenvolvedor Full Stack",
-        company: "Empresa X",
-        period: "2022 - Atual",
+        company: "Siena Company",
         description:
-            "Desenvolvimento de sistemas ERP usando React, Node.js e MySQL."
+            `"Desenvolvimento de software com migração de sistema legado
+            com backend em Nest.JS e frontend com React"
+            `
     },
     {
-        title: "Analista de Sistemas",
-        company: "Empresa Y",
-        period: "2020 - 2022",
+        title: "Desenvolvedor Full Stack - Freelancer",
+        company: "Agilmax contrutora",
         description:
-            "Automação de processos e integração de dados."
+            `"Automação de processos e integração com 
+            banco de dados para controle de funcionários e contas,
+            backend com .NET(Framework core) e frontend com Vue.Js"
+            `
     },
     {
-        title: "Suporte Técnico",
-        company: "Empresa Z",
-        period: "2018 - 2020",
+        title: "Auxiliar Administrativo",
+        company: "Engenho Triunfo",
         description:
-            "Manutenção de sistemas e atendimento ao cliente."
+            `"Manutenção de sistemas, atendimento ao cliente,
+            controle financeiro, funcionários, produção, estoque e vendas"          
+            `
+    },
+    {
+        title: "Desenvolvedor Backend .NET",
+        company: "Projeto Pessoal",
+        description:
+            `"Criação de sistema para controle de gastos de um condomínio
+            onde implementei o backend com
+            banco de dados e frontend com React e Material UI."
+            `
+    },
+    {
+        title: "Desenvolvedor Frontend React/Node",
+        company: "Landing page freelancer",
+        description:
+            `"Criação de landing page profissional com foco em porrtifólio pessoal
+            com React entregando qualidade e boas práticas."       
+            `
     }
 ];
 
@@ -59,8 +80,7 @@ export default function Experience() {
 
                     <h3>{exp.title}</h3>
                     <span>{exp.company}</span>
-                    <p className={styles.period}>{exp.period}</p>
-
+                    
                     <p className={styles.description}>
                         {exp.description}
                     </p>

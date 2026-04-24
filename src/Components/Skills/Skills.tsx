@@ -14,22 +14,22 @@ import styles from './styles.module.css';
 const skills = [
     {
         title: 'Frontend',
-        description: 'Interfaces modernas, responsivas e focadas em experiência do usuário.',
+        description: 'Interfaces modernas, responsivas e focadas em experiência do usuário com React e Vue.',
         icon: <FaReact />
     },
     {
         title: 'Backend',
-        description: 'APIs, regras de negócio e integração com banco de dados.',
+        description: 'APIs, regras de negócio e integração com banco de dados com TypeScript e C#.',
         icon: <FaServer />
     },
     {
         title: 'Fullstack',
-        description: 'Integração completa entre frontend e backend.',
+        description: 'Integração completa entre frontend e backend usando frameworks para cada tipo de projeto.',
         icon: <FaLayerGroup />
     },
     {
         title: 'Banco de Dados',
-        description: 'Modelagem, consultas e otimização de dados.',
+        description: 'Modelagem, consultas e otimização de dados com SQL e NoSQL.',
         icon: <FaDatabase />
     },
     {
@@ -39,7 +39,7 @@ const skills = [
     },
     {
         title: 'Testes Automatizados',
-        description: 'Criação de testes para garantir qualidade e estabilidade.',
+        description: 'Criação de testes para garantir qualidade e estabilidade do sistema.',
         icon: <FaVial />
     },
     {

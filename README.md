@@ -1,73 +1,148 @@
-# React + TypeScript + Vite
+🚀 Portfólio Full Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida com foco em apresentar minhas habilidades, experiências e projetos como desenvolvedor Full Stack. O projeto foi construído com tecnologias modernas, responsividade e boas práticas de desenvolvimento.
 
-Currently, two official plugins are available:
+📸 Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Interface moderna com animações, responsividade e foco em experiência do usuário.
 
-## React Compiler
+🧠 Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este portfólio foi desenvolvido com o objetivo de:
 
-## Expanding the ESLint configuration
+Apresentar minhas habilidades técnicas
+Exibir minhas experiências profissionais
+Demonstrar domínio em frontend e backend
+Aplicar conceitos modernos de UI/UX
+Praticar boas práticas de arquitetura e código limpo
+🛠️ Tecnologias Utilizadas
+Frontend
+React
+TypeScript
+CSS Modules
+React Icons
+Conceitos aplicados
+Componentização
+Responsividade (Mobile First)
+Hooks personalizados
+Manipulação de estado
+Animações e transições CSS
+Clean Code
+⚙️ Funcionalidades
+🧩 Hero Section
+Efeito de digitação com hook customizado (useTypewriter)
+Exibição dinâmica de tecnologias:
+Node.js 🟢
+React ⚛️
+TypeScript 🔷
+Web 🌐
+Ícones dinâmicos sincronizados com o texto
+Avatar com:
+Alternância entre imagem e vídeo
+Animação automática
+Responsividade:
+Oculta imagem/vídeo em telas menores que 500px
+👨‍💻 Sobre Mim
+Texto profissional dividido em parágrafos
+Justificado para melhor leitura
+Estrutura limpa e organizada
+Espaçamento otimizado entre blocos
+🧠 Skills
+Grid responsivo com tecnologias:
+Frontend
+Backend
+Fullstack
+Banco de Dados
+APIs REST
+Testes Automatizados
+DevOps
+Boas Práticas
+Cards com:
+Hover animation
+Ícones interativos
+Layout adaptável:
+Desktop: 4 colunas
+Tablet: 2 colunas
+Mobile: 1 coluna
+💼 Experiências
+Sistema de navegação manual (sem autoplay)
+Card único dinâmico com:
+Cargo
+Empresa
+Descrição
+Botões de navegação internos (← →)
+Indicador de posição:
+● ○ ○
+Estilo visual:
+Fundo escuro
+Texto destacado
+Espaçamento interno otimizado
+Texto com estilo de citação
+📱 Responsividade
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+O projeto foi cuidadosamente adaptado para diferentes tamanhos de tela:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Dispositivo	Comportamento
+Desktop	Layout completo com imagem
+Tablet	Layout centralizado
+Mobile	Layout em coluna
+< 500px	Remove imagem/vídeo do Hero
+🎨 Estilo e UI
+Design moderno com cores escuras
+Uso de sombras e glow effects
+Bordas animadas no avatar
+Transições suaves
+Tipografia limpa (Open Sans)
+🧪 Boas Práticas Aplicadas
+Separação de responsabilidades
+Componentes reutilizáveis
+CSS isolado com Modules
+Uso de hooks customizados
+Código limpo e legível
+Responsividade sem gambiarra
+📂 Estrutura do Projeto
+src/
+ ├── components/
+ │   ├── Hero/
+ │   ├── HeroImage/
+ │   ├── Skills/
+ │   ├── Experience/
+ │   ├── About/
+ │   └── Reveal/
+ │
+ ├── hooks/
+ │   └── useTypewriter.ts
+ │
+ ├── assets/
+ │   ├── img/
+ │   └── video/
+ │
+ └── styles/
+🚀 Como Rodar o Projeto
+# clonar repositório
+git clone https://github.com/seu-usuario/seu-repo
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# entrar na pasta
+cd seu-repo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# instalar dependências
+npm install
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# rodar projeto
+npm run dev
+📈 Melhorias Futuras
+Adicionar seção de projetos
+Integração com backend (API própria)
+Tema dark/light
+Internacionalização (i18n)
+Animações com Framer Motion
+SEO otimizado
+👨‍💻 Autor
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Halison Roque
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Desenvolvedor Full Stack focado em criar soluções modernas, performáticas e escaláveis.
+
+📄 Licença
+
+Este projeto é de uso pessoal e demonstrativo.

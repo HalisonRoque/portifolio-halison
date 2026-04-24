@@ -15,7 +15,8 @@
 }
 
 .text {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -29,6 +30,6 @@
   }
 
   .text {
-    text-align: center;
+    text-align: justify;
   }
 }

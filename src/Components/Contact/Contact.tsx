@@ -12,7 +12,7 @@ export default function Contact() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h2 className={styles.title}>
-                        Vamos conversar?
+                        Vamos Conversar?
                     </h2>
 
                     <p className={styles.text}>
