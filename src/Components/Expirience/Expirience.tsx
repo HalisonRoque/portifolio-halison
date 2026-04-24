@@ -41,7 +41,7 @@ export default function Experience() {
     const exp = experiences[index];
 
     return (
-        <section className={styles.section}>
+        <section id="expirience" className={styles.section}>
             <h2 className={styles.title}>Experiências</h2>
 
             <div className={styles.carousel}>

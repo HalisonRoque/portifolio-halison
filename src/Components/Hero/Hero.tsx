@@ -1,10 +1,20 @@
 import styles from './styles.module.css';
 import { useTypewriter } from '../../hooks/useTypewriter';
 import HeroImage from './HeroImage';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type JSX } from 'react';
+
+import { FaReact, FaNodeJs, FaGlobe } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+
+const techIcons: Record<string, JSX.Element> = {
+    Node: <FaNodeJs />,
+    React: <FaReact />,
+    TypeScript: <SiTypescript />,
+    Web: <FaGlobe />
+};
 
 export default function Hero() {
-    const typedText = useTypewriter(["Node", "React", "TypeScript"]);
+    const typedText = useTypewriter(["Node", "React", "TypeScript", "Web"]);
 
     const [isMobile, setIsMobile] = useState(false);
 
@@ -26,6 +36,9 @@ export default function Hero() {
                     Desenvolvedor <br />
                     <span className={styles.highlight}>
                         {typedText}
+                        <span className={styles.icon}>
+                            {techIcons[typedText]}
+                        </span>
                     </span>
                 </h2>
 

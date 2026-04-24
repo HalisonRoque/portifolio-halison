@@ -32,6 +32,7 @@ export default function Header() {
                     <li><a className={styles.link} onClick={() => setOpen(false)} href="#about">Sobre</a></li>
                     <li><a className={styles.link} onClick={() => setOpen(false)} href="#skills">Habilidades</a></li>
                     <li><a className={styles.link} onClick={() => setOpen(false)} href="#contact">Contatos</a></li>
+                    <li><a className={styles.link} onClick={() => setOpen(false)} href="#expirience">Experiências</a></li>
                 </ul>
             </div>
         </header>
