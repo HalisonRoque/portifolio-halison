@@ -120,10 +120,10 @@ src/
  └── styles/
 🚀 Como Rodar o Projeto
 # clonar repositório
-git clone https://github.com/seu-usuario/seu-repo
+git clone https://github.com/HalisonRoque/portifolio-halison.git
 
 # entrar na pasta
-cd seu-repo
+cd portifolio-halison
 
 # instalar dependências
 npm install
