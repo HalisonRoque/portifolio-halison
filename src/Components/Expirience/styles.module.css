@@ -4,7 +4,24 @@
   margin: 2rem 0;
   text-align: center;
   color: white;
-  background: #0a1128;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(0, 212, 255, 0.2), transparent 35%),
+    radial-gradient(circle at 90% 80%, rgba(0, 110, 255, 0.2), transparent 35%),
+    linear-gradient(120deg, #020617 0%, #020617 40%, #0a1f44 100%);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .description {

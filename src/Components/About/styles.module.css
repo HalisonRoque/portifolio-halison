@@ -4,8 +4,8 @@
   flex-direction: column;
   justify-content: column;
   align-items: center;
-  padding: 10rem;
-  max-width: 900px;
+  padding: 7rem;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -17,6 +17,7 @@
 .text {
   margin-bottom: 1rem;
   text-align: justify;
+  line-height: 1.6;
 }
 
 @media (max-width: 768px) {

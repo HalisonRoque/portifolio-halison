@@ -1,7 +1,7 @@
 .section {
   font-family: "Open Sans", sans-serif;
   min-height: 80vh;
-  background: url("../../assets/img/tec.jpg") center/cover no-repeat;
+  background: url("../../assets/img/main-bg.svg") center/cover no-repeat;
   position: relative;
   color: white;
   display: flex;
@@ -93,17 +93,6 @@
 
 .email {
   background: #0072c6;
-}
-
-.imageBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  width: 350px;
-  max-width: 100%;
 }
 
 @media (max-width: 760px) {

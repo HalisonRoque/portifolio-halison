@@ -1,6 +1,5 @@
 import { FaInstagram, FaGithub, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import styles from './styles.module.css';
-import logo from '../../assets/img/javascript.svg'
 
 export default function Contact() {
 
@@ -53,14 +52,6 @@ export default function Contact() {
                             <FaEnvelope /> Email
                         </a>
                     </div>
-                </div>
-
-                <div className={styles.imageBox}>
-                    <img
-                        src={logo}
-                        alt="Javascript"
-                        className={styles.image}
-                    />
                 </div>
             </div>
         </section>
