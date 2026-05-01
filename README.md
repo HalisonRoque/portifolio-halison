@@ -5,6 +5,10 @@ Aplicação web desenvolvida com foco em apresentar minhas habilidades, experiê
 📸 Preview
 
 Interface moderna com animações, responsividade e foco em experiência do usuário.
+<img width="1845" height="809" alt="image" src="https://github.com/user-attachments/assets/969a3bb7-e67b-4a64-b222-b06518b20837" />
+
+<img width="1841" height="922" alt="image" src="https://github.com/user-attachments/assets/7e2c39c9-96f4-406b-a9c5-03878b6a117a" />
+
 
 🧠 Sobre o Projeto
 
@@ -138,8 +142,10 @@ Tema dark/light
 Internacionalização (i18n)
 Animações com Framer Motion
 SEO otimizado
-👨‍💻 Autor
 
+# Site
+https://landinghalison.netlify.app/
+👨‍💻 Autor
 Halison Roque
 
 Desenvolvedor Full Stack focado em criar soluções modernas, performáticas e escaláveis.
