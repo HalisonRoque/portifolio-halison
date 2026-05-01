@@ -101,6 +101,7 @@ Uso de hooks customizados
 Código limpo e legível
 Responsividade sem gambiarra
 📂 Estrutura do Projeto
+
 src/
  ├── components/
  │   ├── Hero/
